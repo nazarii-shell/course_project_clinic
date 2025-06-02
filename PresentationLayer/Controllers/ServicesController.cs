@@ -18,7 +18,7 @@ public class ServiceController : ControllerBase
 
 
     [HttpPost("service")]
-    public IActionResult GetAllPatients([FromBody] ServiceDto serviceDto)
+    public IActionResult AddService([FromBody] ServiceDto serviceDto)
     {
         return Ok(_serviceService.AddService(serviceDto));
     }

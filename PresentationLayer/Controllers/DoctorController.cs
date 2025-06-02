@@ -30,7 +30,7 @@ public class DoctorController : ControllerBase
     }
     
     [HttpPatch("doctor/{id}")]
-    public IActionResult UpdatePatient(int id, UpdateDoctorDto patient)
+    public IActionResult UpdateDoctor(int id, UpdateDoctorDto patient)
     {
         if (!_authService.CheckAuth(patient, "Manager"))
             return BadRequest("You are not authorized");

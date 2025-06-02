@@ -17,11 +17,11 @@ namespace DataAccess.UoW
         private GenericRepository<Patient> _patientRepo;
         private GenericRepository<Service> _serviceRepo;
 
-        public GenericRepository<User> UserRepo => _userRepo ??= new GenericRepository<User>(clinicContext);
-        public GenericRepository<Appointment> AppointmentRepo => _appointmentRepo ??= new GenericRepository<Appointment>(clinicContext);
-        public GenericRepository<Doctor> DoctorRepo => _doctorRepo ??= new GenericRepository<Doctor>(clinicContext);
-        public GenericRepository<Patient> PatientRepo => _patientRepo ??= new GenericRepository<Patient>(clinicContext);
-        public GenericRepository<Service> ServiceRepo => _serviceRepo ??= new GenericRepository<Service>(clinicContext);
+        public IGenericRepository<User> UserRepo => _userRepo ??= new GenericRepository<User>(clinicContext);
+        public IGenericRepository<Appointment> AppointmentRepo => _appointmentRepo ??= new GenericRepository<Appointment>(clinicContext);
+        public IGenericRepository<Doctor> DoctorRepo => _doctorRepo ??= new GenericRepository<Doctor>(clinicContext);
+        public IGenericRepository<Patient> PatientRepo => _patientRepo ??= new GenericRepository<Patient>(clinicContext);
+        public IGenericRepository<Service> ServiceRepo => _serviceRepo ??= new GenericRepository<Service>(clinicContext);
 
         public UnitOfWork(ClinicContext context)
         {

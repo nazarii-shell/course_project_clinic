@@ -24,5 +24,8 @@ namespace DataAccess.Repositories
         public void Update(TModel model);
 
         public void Delete(int id);
+
+        public bool Exists(Func<TModel, bool> predicate);
+        public TModel? Find(Func<TModel, bool> predicate);
     }
 }

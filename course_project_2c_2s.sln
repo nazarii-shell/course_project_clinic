@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOS", "DTOS\DTOS.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{2E2FA20B-05A5-408C-A1E7-9D5236354830}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLTests", "BLTests\BLTests.csproj", "{22479478-2C0B-4149-BFBD-C7C3BF7077E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{2E2FA20B-05A5-408C-A1E7-9D5236354830}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2FA20B-05A5-408C-A1E7-9D5236354830}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E2FA20B-05A5-408C-A1E7-9D5236354830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22479478-2C0B-4149-BFBD-C7C3BF7077E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22479478-2C0B-4149-BFBD-C7C3BF7077E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22479478-2C0B-4149-BFBD-C7C3BF7077E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22479478-2C0B-4149-BFBD-C7C3BF7077E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

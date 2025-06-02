@@ -33,7 +33,7 @@ public class PatientService
     
     public PatientBusinessModel[] GetAllPatients()
     {
-        var res=  _unitOfWork.PatientRepo.GetAll();
+        var res=  _unitOfWork.PatientRepo.GetAll(null, null, null);
         return _mapper.Map<PatientBusinessModel[]>(res);
     }
 

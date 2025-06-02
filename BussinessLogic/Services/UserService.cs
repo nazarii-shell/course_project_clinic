@@ -40,7 +40,7 @@ public class UserService
     
     public UserBusinessModel[] GetAllUsers()
     {
-        var res=  _unitOfWork.UserRepo.GetAll();
+        var res=  _unitOfWork.UserRepo.GetAll(null, null, null, null);
         
         return _mapper.Map<UserBusinessModel[]>(res);
     }
@@ -49,13 +49,4 @@ public class UserService
     {
         return _unitOfWork.UserRepo.Find(predicate);
     }
-
-    // [HttpPost("login")]
-    // public IActionResult Login([FromBody] UserDto user)
-    // {
-    //     var existing = _context.Users.FirstOrDefault(u => u.Username == user.Username && u.Password == user.Password);
-    //     if (existing == null)
-    //         return Unauthorized("Invalid credentials");
-    //     return Ok(new { existing.Username, existing.Role });
-    // }
 }

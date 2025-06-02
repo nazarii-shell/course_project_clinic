@@ -1,15 +1,16 @@
 ﻿using DataAccess.Models;
+using DataAccess.Repositories;
 using DomainData.Repositories;
 
 namespace DataAccess.UoW
 {
     public interface IUnitOfWork : IDisposable
     {
-       public GenericRepository<User> UserRepo { get; }
-        public GenericRepository<Appointment> AppointmentRepo { get; }
-        public GenericRepository<Doctor> DoctorRepo { get; }
-        public GenericRepository<Patient> PatientRepo { get; }
-        public GenericRepository<Service> ServiceRepo { get; }
+       public IGenericRepository<User> UserRepo { get; }
+        public IGenericRepository<Appointment> AppointmentRepo { get; }
+        public IGenericRepository<Doctor> DoctorRepo { get; }
+        public IGenericRepository<Patient> PatientRepo { get; }
+        public IGenericRepository<Service> ServiceRepo { get; }
 
         public void Save();
 

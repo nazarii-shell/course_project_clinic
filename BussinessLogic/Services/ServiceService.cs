@@ -20,7 +20,7 @@ public class ServiceService
 
     public ServiceBusinessModel[] GetAll()
     {
-        var res = _unitOfWork.ServiceRepo.GetAll();
+        var res = _unitOfWork.ServiceRepo.GetAll(null, null, null);
         return _mapper.Map<ServiceBusinessModel[]>(res);
     }
 

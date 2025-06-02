@@ -8,7 +8,7 @@ namespace HospitalApp.Controllers;
 
 [ApiController]
 [Route("api")]
-public class Appoinment : ControllerBase
+public class AppoinmentController : ControllerBase
 {
     private readonly DoctorService _doctorService;
     private readonly PatientService _patientService;
@@ -16,7 +16,7 @@ public class Appoinment : ControllerBase
     private readonly AuthService _authService;
 
 
-    public Appoinment(AppoinmentService patienService, PatientService patientService, DoctorService doctorService, AuthService authService)
+    public AppoinmentController(AppoinmentService patienService, PatientService patientService, DoctorService doctorService, AuthService authService)
     {
         _appointmentService = patienService;
         _patientService = patientService;
